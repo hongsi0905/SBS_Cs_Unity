@@ -42,7 +42,6 @@ namespace _221019
             return ($"[{errorCode}] {Message} (password : {password})");
         }
     }
-
     class SignManage
     {
         public void SignIn(string email, string password, string repw)
@@ -55,12 +54,11 @@ namespace _221019
                 throw new InvalidPasswordException("비밀번호 길이가 유효하지 않음 (4~12)", 20, password);
             else if (password != repw)
                 throw new InvalidPasswordException("비밀번호가 일치하지 않음", 30, password);
-            else
+            //else
                 //throw new InvalidEmailException("ID 형식이 틀림", 200, email, repw);
 
         }
         
-
     }
 
     
