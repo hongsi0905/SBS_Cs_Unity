@@ -107,7 +107,6 @@ namespace _221027
                 case ConsoleKey.RightArrow:
                     if (IsMovePlayer(playerPos, VECTOR.RIGHT))
                         playerPos += vectorToPos[(int)VECTOR.RIGHT];
-
                     break;
                 case ConsoleKey.UpArrow:
                     if (IsMovePlayer(playerPos, VECTOR.UP))
