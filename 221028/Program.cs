@@ -156,6 +156,8 @@ namespace _221028
             Func<int> onIntFunc = () => 10;
             Console.WriteLine(onIntFunc());
 
+
+            //====================================================================//
             // 델리게이트가 null인 상태에서 호출을 하면 NullReference 예외 발생
             Action onCallback = null;
             // onCallback(); XX
